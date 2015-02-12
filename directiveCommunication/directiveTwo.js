@@ -11,8 +11,10 @@ function directiveTwo() {
 	  console.log('Hello directive Two');
 
 	  var vm = this;
-	  vm.name = 'Two'
-
+	  vm.name = 'Two';
+	  vm.whatsMyName = function(){
+		console.log('my name is %s!', vm.name);
+	  }
 
 	}
   };
